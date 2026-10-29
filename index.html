@@ -3,7 +3,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width"/>
 <meta name="builder" content="Stronglify"/>
-<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/295/favicon-1790369643-1791392218.svg"/>
+<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/295/favicon-1793308346.svg"/>
 <title>Grano</title>
 <meta name="description" content="Sitio de ejemplo del diseño Grano: inicio, blog, artículo y página de contenido."/>
 <meta name="robots" content="index"/>
@@ -41,8 +41,8 @@ a:focus-visible{outline-color:var(--g-verde)}
 
  
 .archive{padding-top:72px}
-.entries{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:ficha}
-.entry,.entry:nth-child(2),.entry:nth-child(3){counter-increment:ficha;position:relative;margin:0!important;border-radius:0!important;
+.entries{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.entry,.entry:nth-child(2),.entry:nth-child(3){position:relative;margin:0!important;border-radius:0!important;
   background:var(--g-vino)!important;color:var(--g-hueso)!important;padding:34px 30px 30px 58px;min-height:340px;overflow:hidden;
   display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 0 0 1px rgb(243 238 230/.08);
   transition:transform .25s ease,box-shadow .25s ease}
@@ -50,8 +50,6 @@ a:focus-visible{outline-color:var(--g-verde)}
 .entry::after{content:"";position:absolute;left:9px;top:12px;bottom:12px;width:10px;
   background:repeating-linear-gradient(to bottom,var(--g-negro) 0 9px,transparent 9px 20px)}
 .entry b{display:block;font-family:Petrona,serif;font-size:clamp(1.6rem,2.2vw,2.1rem);font-weight:500;line-height:1.02;letter-spacing:-.02em}
-.entry b::before{content:counter(ficha,decimal-leading-zero);display:block;margin-bottom:22px;font-size:clamp(3.6rem,6vw,5.4rem);
-  line-height:.78;letter-spacing:-.05em;color:var(--g-verde-txt)}
 .entry dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:30px 0 0;padding-top:18px;border-top:1px solid rgb(243 238 230/.18);font-size:.98rem}
 .entry dt{color:var(--g-verde-txt);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;padding-top:.28em}
 .entry dd{margin:0}
@@ -64,14 +62,14 @@ body,.process,.contact,.archive-footer,.log article,.entry,.entry:nth-child(2),.
 </style></head>
 <body data-theme="vestigio" class="antialiased overflow-x-hidden">
   <header class="wrap">
-    <a class="brand" href="/grano/">Grano</a>
+    <a class="brand" href="./">Grano</a>
     <nav class="nav" id="primary-navigation" aria-label="Principal">
   
-    <a href="/grano/">Inicio</a>
+    <a href="./">Inicio</a>
   
-    <a href="/grano/page">Nosotros</a>
+    <a href="./page">Nosotros</a>
   
-    <a href="/grano/blog">Blog</a>
+    <a href="./blog">Blog</a>
   
 </nav>
 
@@ -92,6 +90,7 @@ body,.process,.contact,.archive-footer,.log article,.entry,.entry:nth-child(2),.
     </section>
 
     <section class="archive wrap" id="archivo">
+      <div class="archive-head"><h2>Lo que pasa por el laboratorio</h2><p>Rollos olvidados, encargos recientes y negativos antiguos: cada trabajo recibe su ficha.</p></div>
       <div class="entries">
         
 <article class="entry"><b>Rollo de vacaciones</b><dl><dt>Materia</dt><dd>color 35 mm</dd><dt>Hallazgo</dt><dd>un cajón de casa</dd><dt>Trabajo</dt><dd>revelado y escaneo</dd></dl></article>
